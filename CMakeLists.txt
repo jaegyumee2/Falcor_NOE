@@ -439,6 +439,9 @@ add_subdirectory(Source/RenderPasses)
 add_subdirectory(Source/Samples)
 add_subdirectory(Source/Tools)
 
+# Workspace: our own render passes, outside the stock Falcor tree.
+add_subdirectory(NOE)
+
 add_dependencies(Falcor copy_data_folder copy_scripts_folder)
 
 # Make Falcor core library depend on deploying all dependencies.
