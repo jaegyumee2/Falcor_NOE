@@ -17,6 +17,9 @@
 
 import LoadShadingData;
 import NOEEstimator;
+// NOEEstimator imports this without re-exporting it, and the bounce loop
+// below instantiates SceneRayQuery directly.
+import Scene.RaytracingInline;
 import Params;
 import Utils.Math.MathHelpers;
 import Utils.Sampling.SampleGenerator;

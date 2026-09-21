@@ -16,6 +16,9 @@
 #include "Utils/Math/MathConstants.slangh"
 
 __exported import EmitterSampling;
+// EmitterSampling imports this one without re-exporting it, so the U_j term
+// below would not see triProjectedSolidAngle unless we pull it in here too.
+import ProjectedSolidAngle;
 import Scene.RaytracingInline;
 import Utils.Sampling.SampleGeneratorInterface;
 

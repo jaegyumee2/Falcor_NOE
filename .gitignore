@@ -31,3 +31,6 @@
 *.tlog
 *.bak
 *.swp
+
+# Junction to build/windows-vs2022/bin/Release (see NOE/README.md)
+/NOE/exe/
